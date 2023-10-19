@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100px;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+
+}
+
+.logo{
+    font-family: 'Aclonica';
+    font-size: 25px;
+    padding: 50px;
+    margin-left: 50px;
+}
+
+.logo a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav_bar{
+    font-family: 'poppins';
+    font-size: 20px;
+    float: right;
+    list-style: none;
+}
+
+.nav_bar li{
+    display: inline-block;
+}
+
+.nav_bar li a{
+    padding: 15px;
+}
+
+.nav_bar li a:hover{
+    background: #7d7a7a;
+    color: #fff;
+    border: 1px solid#000;
+    border-radius: 5px;
+    border-width: auto;
+}
+
+.banner{
+    height: 60vh;
+    border:1px solid;
+    border-radius: 1px;
+    border-color: #000;
+    background-image: url('./posttest5/img/2.jpg');
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.banner h2{
+    font-family: 'Aclonica';
+    color: white;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid #fff;
+}
+
+.pop p{
+    color: black;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
+section {
+    padding: 150px;
+}
+
+section h3{
+    text-align: center;
+    padding: 20px 0;
+    color: black;
+    
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 15px;
+    align-items: center;
+    grid-gap:40px;
+}
+
+img{
+    object-fit: cover;
+}
+
+.grid > article{
+    font-family: 'poppins';
+    box-shadow: 10px 5px 5px 0px black;
+    border-radius: 20px;
+    text-align: center;
+    background: whitesmoke;
+    width: 300px;
+    transition: transform;
+}
+
+.grid> article img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.grid article:hover{
+    transform: scale(1.2);
+}
+
+
+
+.pop {
+    background-image: url('../img/sky.jpg');
+    font-size: 20px;
+}
+
+.info-container {
+    height: 500px;
+    background-color: rgb(231, 231, 231);
+    color: white;
+}
+
+
+    
+
+/* footer p {
+    padding: 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+} */
+
+.container{
+    background-color: #202020;
+}
+
+.pop-title {
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-title h3{
+    font-family: 'Aclonica';
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid #7a7a7a;
+}
+
+div.profil{
+    z-index: 999;
+    position: fixed;
+    top: 100px;
+    left: 250px;
+    right: 250px;
+    bottom: 100px;
+    padding: 100px;
+    border-radius: 40px;
+    display: none;
+}
+
+
+div.profil .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.profil .image {
+    text-align: center;
+    
+}
+
+div.profil .image img{
+    padding-top: 20px;
+    border-radius: 30px;
+}
+
+div.profil div.balik {
+    width: 100%;
+    padding: 25px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+div.profil div.balik h3 {
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    line-height: 40px;
+}
+
+div.profil div.balik h3:hover {
+    background-color: #48cae4;
+    cursor: pointer;
+}
+
+div.content {
+    width: 100vw;
+    height: 500px;
+    background-color: #7d7a7a;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.content .text {
+    padding-top: 150px;
+    padding-left: 50px;
+    width: 600px;
+    box-sizing: border-box;
+}
+
+div.content .text h1{
+    margin-bottom:50px ;
+}
+
+div.content .text h3 {
+    border: 1px dashed #caf0f8;
+    background-color: #00c4d8;
+    color: #03045e;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+}
+
+div.content .text h3:hover{
+    cursor: pointer;
+    transition: .3s;
+    background-color: #caf0f8;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+    font-family: 'Aclonica';
+  }
